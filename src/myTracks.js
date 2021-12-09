@@ -6,12 +6,12 @@ function myTracks() {
   return [
     {
       name: "Ceremony",
-      cover: "./assets/img/ever.jpg",
+      cover: "./assets/img/ceremony.jpg",
       artist: "New Order",
       audio: "./assets/audio/ceremony.mp3",
       color: ["#88A4B9", "#30697D"],
       id: uuidv4(),
-      active: false
+      active: true
     },
     {
       name: "Ever",
