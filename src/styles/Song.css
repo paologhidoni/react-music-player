@@ -5,3 +5,8 @@
   align-items: center;
   justify-content: center;;
 }
+
+.song-container img {
+  width: 20%;
+  border-radius: 50%;
+}
