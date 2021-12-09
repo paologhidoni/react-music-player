@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Player.css'
 
 // importing Font Awesome and specific icons.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,7 +12,7 @@ const Player = () => {
     <div className="player">
       <div className="time-control">
         <p>Start Time</p>
-        <input type="range" />
+        <input type="range" /> 
         <p>End Time</p>
       </div>
 
