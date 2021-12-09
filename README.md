@@ -1,11 +1,12 @@
 # Music Player
-I am building a music player using HTML, CSS and vanilla JavaScript. I would like the music player to be able to stream tracks stored on a server, but eventually also interact with Spotify's API, stream music and retrieve metadata such as track info, artwork, music genre, genre-related playlists.
+I am restarting the music player project, this time using React.js. I would like the music player to be able to stream tracks stored on a server, but eventually also interact with Spotify's API, stream music and retrieve metadata such as track info, artwork, music genre, genre-related playlists.
 
 ## Technologies Used
 
 * HTML
 * CSS
 * JavaScript
+* React.js
 
 
 ## User Stories
