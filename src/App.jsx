@@ -15,13 +15,20 @@ import tracks from "./myTracks";
 function App() {
 
   // State
-  const [songs, setSongs] = useState(tracks()); // get all of our songs
-  const [currentSong, setCurrentSong] = useState(songs[0]); // set the first song to start with (current song)
+
+  // get all of our songs
+  const [songs, setSongs] = useState(tracks());
+
+  // set the first song to start with (current song)
+  const [currentSong, setCurrentSong] = useState(songs[0]); 
+
+  // set the state of the song, whether it is currently playing or not, initially set as false
+  const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div className="App">
       <Song currentSong={currentSong /* this is the state we are passing */} /> 
-      <Player />
+      <Player setIsPlaying={setIsPlaying} isPlaying={isPlaying} currentSong={currentSong}/>
 
 
     </div>
