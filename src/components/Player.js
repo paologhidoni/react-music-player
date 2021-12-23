@@ -7,6 +7,8 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faStepBackward } from '@fortawesome/free-solid-svg-icons';
 import { faStepForward } from '@fortawesome/free-solid-svg-icons';
 
+
+// Player component
 const Player = ({currentSong, isPlaying, setIsPlaying}) => { // props
   // Ref
   const audioElementRef = useRef(null);
@@ -25,19 +27,21 @@ const Player = ({currentSong, isPlaying, setIsPlaying}) => { // props
 
   return (
     <div className="player">
-      <div className="time-control">
-        <p>Start Time</p>
-        <input type="range" /> 
-        <p>End Time</p>
+
+      <div className="player__time-controls">
+        <p className="player__time-controls--start">Start Time</p>
+        <input type="range" className="player__time-controls--progress"/> 
+        <p className="player__time-controls--end">End Time</p>
       </div>
 
-      <div className="play-control">
-        <FontAwesomeIcon className="skip-back" size="2x" icon={faStepBackward} />
-        <FontAwesomeIcon onClick={playSongHandler} className="play" size="2x" icon={faPlay} />
-        <FontAwesomeIcon className="skip-forward" size="2x" icon={faStepForward} />
-
+      <div className="player__play-controls">
+        <FontAwesomeIcon className="player__play-controls--back" size="2x" icon={faStepBackward} />
+        <FontAwesomeIcon onClick={playSongHandler} className="player__play-controls-play" size="2x" icon={faPlay} />
+        <FontAwesomeIcon className="player__play-controls--forward" size="2x" icon={faStepForward} />
       </div>
-      <audio ref={audioElementRef} src={currentSong.audio}></audio>
+
+      <audio ref={audioElementRef} src={currentSong.audio} className="player__audio-source"></audio>
+
     </div>
   )
 }

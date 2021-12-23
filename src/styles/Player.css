@@ -6,28 +6,28 @@
   justify-content: space-between;
 }
 
-.time-control {
+.player__time-controls {
   width: 50%;
   display: flex;
 }
 
-.time-control input {
+.player__time-controls input {
   width: 100%;
   padding: 1rem 2rem;
 }
 
-.time-control p {
+.player__time-controls p {
   padding: 1rem 2rem;
 
 }
 
-.play-control {
+.player__play-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 45%;
 }
 
-.play-control svg {
+.player__play-controls svg {
   cursor: pointer;
 }
