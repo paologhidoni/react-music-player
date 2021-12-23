@@ -1,4 +1,4 @@
-.song-container {
+.song {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   justify-content: center;;
 }
 
-.song-container img {
+.song__cover {
   width: 20%;
   border-radius: 50%;
 }
